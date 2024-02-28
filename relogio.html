@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-1.11.2.js"></script>
+		<script type="text/javascript">
+			jQuery(window).load(function($){
+				atualizaRelogio();
+			});
+		</script>
+</head>
+<body>
+    <div class="box">
+            <div class="relogio">
+                <output id="hora"></output>
+            </div>
+    </div>
+    
+    <audio loop autoplay>
+        <source src="Steven Universe(MP3_128K).mp3" type="audio/mpeg">
+    </audio>
+</body>
+<script>
+    function atualizaRelogio(){ 
+        var momentoAtual = new Date();
+        
+        var vhora = momentoAtual.getHours();
+        var vminuto = momentoAtual.getMinutes();
+        var vsegundo = momentoAtual.getSeconds();
+        
+        if (vhora < 10){ vhora = "0" + vhora;}
+        if (vminuto < 10){ vminuto = "0" + vminuto;}
+        if (vsegundo < 10){ vsegundo = "0" + vsegundo;}
+
+        horaFormat = vhora + ":" + vminuto + ":" + vsegundo;
+
+        document.getElementById("hora").innerHTML = horaFormat;
+
+        setTimeout("atualizaRelogio()",1000);
+    }
+</script>
+</html>
