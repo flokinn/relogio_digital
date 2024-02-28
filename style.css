@@ -3,11 +3,11 @@
 * {
     margin: 0;
     padding: 0;
-    cursor: url(espada_cursor.png), auto;
+    cursor: url(imagens/espada_cursor.png), auto;
 }
 
 body {
-    background-image: url(fundo.jpg);
+    background-image: url(imagens/fundo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50%;
