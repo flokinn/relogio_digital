@@ -1,4 +1,4 @@
-@charset 'UTF-8';
+@charset "UTF-8";
 
 * {
     margin: 0;
@@ -7,7 +7,7 @@
 }
 
 body {
-    background-image: url(imagens/fundo.jpg);
+    background-image: url(imagens/Wallpaper\ 17\ -\ Mines\ I.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50%;
